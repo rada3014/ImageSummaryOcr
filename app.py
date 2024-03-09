@@ -8,7 +8,7 @@ summarizer = None
 
 def initialize_summarizer():
     global summarizer
-    summarizer = pipeline("summarization")
+    summarizer = pipeline("summarization",model="t5-small")
 
 # Function to extract text from an image using OCR
 def extract_text_from_image(image):
